@@ -6,6 +6,7 @@ import About from "./pages/About/about";
 import Login from "./pages/auth/Login/login";
 import Register from "./pages/auth/Register/register";
 import Footer from "./components/Footer/footer";
+import Manage from "./pages/Manage/manage";
 
 const NavbarVisibilityContext = createContext({
   isVisible: true,
@@ -23,6 +24,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/manage" element={<Manage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
