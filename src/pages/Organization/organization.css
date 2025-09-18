@@ -1,0 +1,211 @@
+.org-calendar-table {
+	width: 100%;
+	max-width: 700px;
+	border-collapse: separate;
+	border-spacing: 0.5rem;
+	background: #fff;
+	font-size: 1.3rem;
+	margin: 0 auto;
+	border: 2px solid #bdbdbd;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.org-calendar-table th {
+	background: #f3f4f6;
+	color: #222;
+	font-weight: 600;
+	padding: 0.7rem 0;
+	border-radius: 6px;
+	border: 1.5px solid #bdbdbd;
+}
+.org-calendar-table td {
+	background: #e0e0e0;
+	text-align: center;
+	padding: 1.2rem 0.2rem;
+	border-radius: 6px;
+	font-weight: 500;
+	color: #222;
+	min-width: 48px;
+	min-height: 48px;
+	box-sizing: border-box;
+	border: 1.5px solid #bdbdbd;
+}
+.org-calendar-empty {
+	background: transparent !important;
+	box-shadow: none !important;
+}
+.organization-page {
+	margin-top: 120px;
+	min-height: 100vh;
+	background: #f7f8fa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+
+.org-title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #6a11cb;
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+}
+.figma-layout {
+	margin-top: 120px;
+	min-height: 90vh;
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+.org-figma-layout {
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+}
+.org-figma-left {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	min-width: 320px;
+	max-width: 340px;
+	flex: 0 0 340px;
+}
+.org-figma-card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.org-figma-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.7rem;
+}
+.org-figma-row {
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+}
+.org-figma-joincode {
+	font-family: monospace;
+	background: #f3f4f6;
+	padding: 0.2em 0.7em;
+	border-radius: 8px;
+	font-size: 1.1em;
+	color: #222;
+}
+.org-figma-input {
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	border: 1px solid #d1d5db;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.org-figma-select {
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	border: 1px solid #d1d5db;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.org-figma-btn {
+	background: #4f8cff;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.6rem 0;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.7rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.org-figma-btn:hover {
+	background: #2563eb;
+}
+.org-figma-emplist-title {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.3rem;
+}
+.org-figma-emplist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 1rem;
+}
+.org-figma-emplist-empty {
+	color: #888;
+}
+.org-figma-main {
+	flex: 1 1 600px;
+	min-width: 340px;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.org-figma-calendar-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	margin-bottom: 1.2rem;
+}
+.org-figma-arrow {
+	background: #fff;
+	border: 1px solid #d1d5db;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.org-figma-arrow:hover {
+	background: #f3f4f6;
+}
+.org-figma-month {
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin: 0 0.5rem;
+}
+.org-figma-calendar {
+	width: 100%;
+	min-height: 220px;
+	background: #e0e0e0;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.org-figma-calendar-placeholder {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #222;
+	text-align: center;
+}
+@media (max-width: 900px) {
+	.org-figma-layout {
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+	}
+	.org-figma-main {
+		max-width: 95vw;
+		min-width: unset;
+		padding: 1.2rem 1rem;
+	}
+	.org-figma-left {
+		max-width: 95vw;
+		min-width: unset;
+	}
+}

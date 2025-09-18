@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar/navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/้Home/home";
@@ -7,13 +7,8 @@ import Login from "./pages/auth/Login/login";
 import Register from "./pages/auth/Register/register";
 import Footer from "./components/Footer/footer";
 import Manage from "./pages/Manage/manage";
-
-const NavbarVisibilityContext = createContext({
-  isVisible: true,
-  setIsVisible: (visible: boolean) => {visible},
-});
-
-export const useNavbarVisibility = () => useContext(NavbarVisibilityContext);
+import { NavbarVisibilityContext, useNavbarVisibility } from "./context/NavbarVisibilityContext";
+import Organization from "./pages/Organization/organization";
 
 function AppContent() {
   const { isVisible } = useNavbarVisibility();
@@ -25,6 +20,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/manage" element={<Manage />} />
+        <Route path="/organization" element={<Organization />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
@@ -32,6 +28,7 @@ function AppContent() {
     </div>
   );
 }
+
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
