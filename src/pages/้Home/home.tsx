@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => (
     <p className="hero-desc">
       ระบบจัดการตารางงานสำหรับ ใช้งานง่าย สะดวก และรวดเร็ว
     </p>
-    <a href="/register" className="hero-btn">
+    <a href="/login" className="hero-btn">
       เริ่มต้นใช้งาน
     </a>
   </section>
